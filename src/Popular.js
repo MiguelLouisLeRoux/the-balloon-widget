@@ -1,6 +1,8 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import { Table } from 'react-bootstrap';
+import FactoryLogic from "./Logic";
+const factory = FactoryLogic();
 
 export default class Popular extends React.Component {
     constructor(props) {
@@ -14,7 +16,7 @@ export default class Popular extends React.Component {
     static tableComponent(colours) {
         return (
             <div className="m-5">
-                <h4>Popular Colours</h4>
+                <h4>😎 Popular Colours</h4>
                 <br/>
                 <div className="border rounded p-4" style={{"backgroundColor": "#D2F2FF", "borderColor": "#D2F2FF"}}>
                     <Table className="table table-hover table-striped text-center">

@@ -9,8 +9,8 @@ function App() {
   return (
     <>
     <HeaderComponent/>
-    <Ranking/>
     <Request/>
+    <Ranking/>
     </>
   );
 }
