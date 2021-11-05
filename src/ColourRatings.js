@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import { Table, Button } from 'react-bootstrap';
+import { IoBalloon } from 'react-icons/io5';
 
 export default function ColourRatings (props){
 
@@ -18,8 +19,8 @@ export default function ColourRatings (props){
                     </thead>
                     <tbody>
                     {props.colours.map(colourElem =>
-                        <tr>
-                            <td>{colourElem.colour}</td>
+                        <tr> 
+                            <td><IoBalloon color={colourElem.colour}/>{colourElem.colour}</td>
                             <td>{colourElem.requests}</td>
                             <td><Button className="btn btn-danger btn-sm">Remove</Button></td>
                         </tr>
@@ -29,4 +30,4 @@ export default function ColourRatings (props){
             </div>
         </div>
     )
-}
+} 
