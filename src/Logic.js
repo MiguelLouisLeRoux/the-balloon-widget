@@ -1,5 +1,5 @@
 export default function FactoryLogic() {
-    let colourList = [{colour:"Red", requests: 5}, {colour:"Red", requests: 5}, {colour:"Red", requests: 11}];
+    let colourList = [];
 
     function requestColour(colVal) {
          
