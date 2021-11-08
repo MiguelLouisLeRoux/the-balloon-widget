@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import { Form } from 'react-bootstrap';
+import { Form, Modal} from 'react-bootstrap';
 import ColourRatings from './ColourRatings';
 import FactoryLogic from './Logic';
 const factory = FactoryLogic();
@@ -30,7 +30,6 @@ export default class Request extends React.Component {
             submit: this.state.colour
         });
         factory.requestColour(this.state.colour);
-        console.log(this.state.colour)
     }
 
     render(){
@@ -44,18 +43,7 @@ export default class Request extends React.Component {
                                     <div className="row d-flex ">
                                         <Form.Label><h5>Request a colour:</h5></Form.Label>
                                         <div className="col-10 d-flex justify-content-end">
-                                        <Form.Select value={this.state.colour} onChange={this.handleChange}> 
-                                            <option value="Select">Select</option>
-                                            <option value="Blue">Blue</option>
-                                            <option value="Red">Red</option>
-                                            <option value="Pink">Pink</option>
-                                            <option value="White">White</option>
-                                            <option value="Black">Black</option>
-                                            <option value="Orange">Orange</option>
-                                            <option value="Purple">Purple</option>
-                                            <option value="Yellow">Yellow</option>
-                                            <option value="Green">Green</option>
-                                        </Form.Select>
+                                        <Form.Control type="text" placeholder="Enter colour" value={this.state.colour} onChange={this.handleChange} required></Form.Control>
                                         </div>
                                         <div className="col-2 d-flex justify-content-start">
                                         <button type="submit" className="btn btn-primary">Request</button>
