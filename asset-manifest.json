@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/the-balloon-widget/static/css/main.a617e044.chunk.css",
-    "main.js": "/the-balloon-widget/static/js/main.d48eba6d.chunk.js",
-    "main.js.map": "/the-balloon-widget/static/js/main.d48eba6d.chunk.js.map",
-    "runtime-main.js": "/the-balloon-widget/static/js/runtime-main.05f43e89.js",
-    "runtime-main.js.map": "/the-balloon-widget/static/js/runtime-main.05f43e89.js.map",
+    "main.css": "/the-balloon-widget/static/css/main.f9e82c0d.chunk.css",
+    "main.js": "/the-balloon-widget/static/js/main.f5fe53ce.chunk.js",
+    "main.js.map": "/the-balloon-widget/static/js/main.f5fe53ce.chunk.js.map",
+    "runtime-main.js": "/the-balloon-widget/static/js/runtime-main.5b3f8677.js",
+    "runtime-main.js.map": "/the-balloon-widget/static/js/runtime-main.5b3f8677.js.map",
     "static/css/2.5377fabe.chunk.css": "/the-balloon-widget/static/css/2.5377fabe.chunk.css",
-    "static/js/2.787f051b.chunk.js": "/the-balloon-widget/static/js/2.787f051b.chunk.js",
-    "static/js/2.787f051b.chunk.js.map": "/the-balloon-widget/static/js/2.787f051b.chunk.js.map",
-    "static/js/3.0d0e9350.chunk.js": "/the-balloon-widget/static/js/3.0d0e9350.chunk.js",
-    "static/js/3.0d0e9350.chunk.js.map": "/the-balloon-widget/static/js/3.0d0e9350.chunk.js.map",
+    "static/js/2.76c514d0.chunk.js": "/the-balloon-widget/static/js/2.76c514d0.chunk.js",
+    "static/js/2.76c514d0.chunk.js.map": "/the-balloon-widget/static/js/2.76c514d0.chunk.js.map",
+    "static/js/3.bf2a1fea.chunk.js": "/the-balloon-widget/static/js/3.bf2a1fea.chunk.js",
+    "static/js/3.bf2a1fea.chunk.js.map": "/the-balloon-widget/static/js/3.bf2a1fea.chunk.js.map",
     "index.html": "/the-balloon-widget/index.html",
     "static/css/2.5377fabe.chunk.css.map": "/the-balloon-widget/static/css/2.5377fabe.chunk.css.map",
-    "static/css/main.a617e044.chunk.css.map": "/the-balloon-widget/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.787f051b.chunk.js.LICENSE.txt": "/the-balloon-widget/static/js/2.787f051b.chunk.js.LICENSE.txt"
+    "static/css/main.f9e82c0d.chunk.css.map": "/the-balloon-widget/static/css/main.f9e82c0d.chunk.css.map",
+    "static/js/2.76c514d0.chunk.js.LICENSE.txt": "/the-balloon-widget/static/js/2.76c514d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.05f43e89.js",
+    "static/js/runtime-main.5b3f8677.js",
     "static/css/2.5377fabe.chunk.css",
-    "static/js/2.787f051b.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.d48eba6d.chunk.js"
+    "static/js/2.76c514d0.chunk.js",
+    "static/css/main.f9e82c0d.chunk.css",
+    "static/js/main.f5fe53ce.chunk.js"
   ]
 }
