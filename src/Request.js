@@ -4,9 +4,11 @@ import { Form, Modal, Button} from 'react-bootstrap';
 import ColourRatings from './ColourRatings';
 import FactoryLogic from './Logic';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import { Hint } from 'react-autocomplete-hint';
 import TimelimitModal  from "./TimelimitModal";
 import { IoBalloon } from 'react-icons/io5';
 import CssColourList from './cssColours'
+import { Input } from "react-bootstrap-typeahead";
 const factory = FactoryLogic();
 
 
@@ -34,10 +36,12 @@ export default class Request extends React.Component {
         this.handleRequestUpdate = this.handleRequestUpdate.bind(this);
         this.colourRequestUpdateSubmit = this.colourRequestUpdateSubmit.bind(this);
 
-        setInterval(()=>{ this.setState({
+        setInterval(()=>{ 
+            this.setState({
             trendList : factory.filtering("trending"),
             popList : factory.filtering("popular"),
             upList : factory.filtering("up and coming")})}, 1000)
+        
     }
 
     handleChange(event) { 
@@ -123,23 +127,21 @@ export default class Request extends React.Component {
                     </Form>
                 </Modal>
                 </div>
-                <div className="container mt-5 m-5">
+                <div className="container mt-5 mb-3">
                     <div className="row">
-                        <div className="col-5 mx-auto">
-                            <Form onSubmit={this.handleSubmit}>
-                                <Form.Group>
-                                    <div className="row d-flex ">
-                                        <Form.Label><h5>Request a colour:</h5></Form.Label>
-                                        <div className="col-10 d-flex justify-content-end">
-                                        <Form.Control data={CssColourList}  type="text" placeholder="Enter colour" value={this.state.colour} onChange={this.handleChange} required></Form.Control>
+                        <Form onSubmit={this.handleSubmit} className="form-inline">
+                            <Form.Group>
+                                <div className="form-inline">
+                                    <Form.Label for="colourInput" className="col-4 d-flex mx-auto justify-content-start"><h5>Request a colour:</h5></Form.Label>
+                                    <div className="input-group d-flex justify-content-center">
+                                        <Hint options={CssColourList}><input type="text" id="colourInput" className="form-control" placeholder="Enter colour" value={this.state.colour} onChange={this.handleChange} style={{'width': '23em'}} required/></Hint>
+                                        <div className="input-group-append">
+                                            <button type="submit" className="btn btn-primary">Request</button>
                                         </div>
-                                        <div className="col-2 d-flex justify-content-start">
-                                        <button type="submit" className="btn btn-primary">Request</button>
-                                        </div>
-                                        </div>
-                                </Form.Group>
-                            </Form> 
-                        </div>
+                                    </div>
+                                </div>
+                            </Form.Group>
+                        </Form> 
                     </div>
                 </div>
                 <div className="container">

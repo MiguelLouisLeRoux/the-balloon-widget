@@ -18,7 +18,7 @@ export default function TimelimitModal(props) {
   
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Current time limit is: {props.theTimeLimit}min</Modal.Title>
+            <Modal.Title>Current trending time limit is: {props.theTimeLimit}min</Modal.Title>
           </Modal.Header>
             <Modal.Body>Set new time limit (minutes): <input type="number" onChange={event=> setTime(event.target.value)} min="1"></input></Modal.Body>
           <Modal.Footer>
